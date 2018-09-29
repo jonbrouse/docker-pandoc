@@ -45,6 +45,12 @@ RUN apk add --no-cache --update $OPTIONAL_PACKAGES $REQUIRED_PACKAGES && \
     unzip acrotex.zip -d /usr/share/texmf-dist/tex/latex/ && \
     rm acrotex.zip
 
+WORKDIR /usr/share/texmf-dist/tex/latex/acrotex
+
+RUN find . -name "*.ins" -exec latex {} \; && \
+    find . -name "*.dtx" -exec latex {} \; && \
+    texhash
+
 WORKDIR /pandoc
 
 ENTRYPOINT [ "/usr/local/pandoc/bin/pandoc" ]
