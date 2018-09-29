@@ -19,7 +19,6 @@ services:
 
   pandoc:
     image: jonbrouse/docker-pandoc:2.3-full
-    build: .
     volumes:
       - ./:/pandoc
     command: |
