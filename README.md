@@ -4,7 +4,7 @@
 
 ## About This Image
 
-This image uses Alpine base its base image. Two images are created for each release: A base image with only Pandoc installed and a "full" image with the following packages installed:
+This image uses Alpine as its base image. Two images are created for each release: A base image with only Pandoc installed and a "full" image with the following packages installed:
 
 - [tex-live](https://pkgs.alpinelinux.org/package/edge/community/x86_64/texlive-full)
 - [texmf-dist](https://pkgs.alpinelinux.org/package/edge/community/x86_64/texmf-dist)
