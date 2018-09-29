@@ -9,7 +9,7 @@ This image uses Alpine as its base image. Two images are created for each releas
 - [tex-live](https://pkgs.alpinelinux.org/package/edge/community/x86_64/texlive-full)
 - [texmf-dist](https://pkgs.alpinelinux.org/package/edge/community/x86_64/texmf-dist)
 
-## Using Docker Compose 
+## Converting Files Using Docker Compose 
 
 You can use `docker-compose up` to run Pandoc and convert your files. The following example is taken frome this [project's Github repo](https://github.com/jonbrouse/docker-pandoc).
 
