@@ -1,5 +1,6 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # COMPILE PANDOC FROM SOURCE
+l
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 FROM alpine as compile-step
 
@@ -35,15 +36,17 @@ FROM alpine
 ENV PANDOC_ROOT /usr/local/pandoc
 ENV PATH $PATH:$PANDOC_ROOT/bin
 
-ENV REQUIRED_PACKAGES="cmark gmp libffi pcre texlive-xetex zlib"
-ENV OPTIONAL_PACKAGES="texmf-dist"
-
 COPY --from=compile-step $PANDOC_ROOT $PANDOC_ROOT
 
-RUN apk add --no-cache --update $REQUIRED_PACKAGES $OPTIONAL_PACKAGES && \
-    wget http://mirrors.ctan.org/macros/latex/contrib/acrotex.zip && \
-    unzip acrotex.zip -d /usr/share/texmf-dist/tex/latex/ && \
-    rm acrotex.zip
+ENV REQUIRED_PACKAGES="cmark gmp libffi pcre texlive-xetex zlib"
+ENV OPTIONAL_PACKAGES="texlive-full texmf-dist"
+
+RUN apk add --no-cache --update $REQUIRED_PACKAGES 
+
+#RUN apk add --no-cache --update $OPTIONAL_PACKAGES && \
+#    wget http://mirrors.ctan.org/macros/latex/contrib/acrotex.zip && \
+#    unzip acrotex.zip -d /usr/share/texmf-dist/tex/latex/ && \
+#    rm acrotex.zip
 
 WORKDIR /pandoc
 
