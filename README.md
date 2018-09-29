@@ -11,7 +11,7 @@ This image uses Alpine as its base image. Two images are created for each releas
 
 ## Converting Files Using Docker Compose 
 
-You can use `docker-compose up` to run Pandoc and convert your files. The following example is taken frome this [project's Github repo](https://github.com/jonbrouse/docker-pandoc).
+You can use `docker-compose up` to run Pandoc and convert your files. The following example is taken from this [project's Github repo](https://github.com/jonbrouse/docker-pandoc).
 
 ```
 version: "3"
