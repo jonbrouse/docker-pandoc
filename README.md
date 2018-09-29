@@ -1,5 +1,10 @@
 # Pandoc
 
+![Docker Stars](https://img.shields.io/docker/stars/jonbrouse/pandoc.svg)<br>
+![Docker Pulls](https://img.shields.io/docker/pulls/jonbrouse/pandoc.svg)<br>
+![Docker Automated](https://img.shields.io/docker/automated/jonbrouse/pandoc.svg)<br>
+![Docker Build](https://img.shields.io/docker/build/jonbrouse/pandoc.svg)<br>
+
 [Pandoc](https://pandoc.org/) can convert documents in (several dialects of) Markdown, reStructuredText, textile, HTML, DocBook, LaTeX, MediaWiki markup, TWiki markup, TikiWiki markup, Creole 1.0, Vimwiki markup, OPML, Emacs Org-Mode, Emacs Muse, txt2tags, Microsoft Word docx, LibreOffice ODT, EPUB, or Haddock markup to.
 
 ## About This Image
