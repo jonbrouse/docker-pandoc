@@ -2,5 +2,12 @@ version: "3"
 services:
 
   pandoc:
-    image: jonbrouse/pandoc
+    image: jonbrouse/docker-pandoc:2.3-full
     build: .
+    volumes:
+      - ./:/pandoc
+    command: |
+      --pdf-engine xelatex
+      --listings
+      --template common/pdf-template.tex
+      example.md -o example.pdf
