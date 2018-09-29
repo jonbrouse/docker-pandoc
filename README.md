@@ -1,4 +1,4 @@
-![Docker Stars](https://img.shields.io/docker/stars/jonbrouse/pandoc.svg)<br> ![Docker Pulls](https://img.shields.io/docker/pulls/jonbrouse/pandoc.svg)<br> ![Docker Automated](https://img.shields.io/docker/automated/jonbrouse/pandoc.svg)<br> ![Docker Build](https://img.shields.io/docker/build/jonbrouse/pandoc.svg)<br>
+![Docker Stars](https://img.shields.io/docker/stars/jonbrouse/pandoc.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/jonbrouse/pandoc.svg) ![Docker Automated](https://img.shields.io/docker/automated/jonbrouse/pandoc.svg) ![Docker Build](https://img.shields.io/docker/build/jonbrouse/pandoc.svg)
 
 # Pandoc
 
